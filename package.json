@@ -1,0 +1,19 @@
+{
+  "name": "ionic-auto-focus",
+  "version": "1.0.0",
+  "description": "An Ionic directive that gives focus to the element with the `auto-focus` attribute",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamduren/ionic-auto-focus.git"
+  },
+  "author": "Adam Duren <adamduren@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adamduren/ionic-auto-focus/issues"
+  },
+  "homepage": "https://github.com/adamduren/ionic-auto-focus#readme"
+}
