@@ -11,7 +11,7 @@ angular.module('autoFocus', [])
           $timeout(function(){
             el[0].focus();
             if (document.activeElement != el[0]){
-              $timeout(checkAndFocus, 5000);
+              $timeout(checkAndFocus, 500);
             }
           }, 200);
         };
