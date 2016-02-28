@@ -5,10 +5,18 @@ angular.module('autoFocus', [])
     restrict: 'A',
     require: '^^ionNavView',
     link: function(scope, el, attrs, ctrl) {
+
       ctrl.scope.$on('$ionicView.afterEnter', function() {
-        $timeout(function(){
-          el[0].focus();
-        }, 200);
+        var checkAndFocus = function(){
+          $timeout(function(){
+            el[0].focus();
+            if (document.activeElement != el[0]){
+              $timeout(checkAndFocus, 5000);
+            }
+          }, 200);
+        };
+
+        checkAndFocus();
       });
     }
   };
